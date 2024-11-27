@@ -1,5 +1,5 @@
 # Optimizing Reachability in Graph-based Recommender Systems
-This repository contains code and data to reproduce our results from ROptimizing Reachability in Graph-based Recommender Systems"
+This repository contains code and data to reproduce our results from "Optimizing Reachability in Graph-based Recommender Systems"
 
 # Reproducibility
 1. Create virtual environment: ```python3 -m venv reachability```
