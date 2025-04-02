@@ -67,7 +67,6 @@ Once the environment is set up and the data is prepared, you can run the scripts
    ```bash
    python3 compute_greedy_rewirings.py
 
-
 ## Contact
 For questions or further information, please contact:
 - **Alex Martinez**
