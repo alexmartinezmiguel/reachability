@@ -47,25 +47,25 @@ Our experiments utilize the NELAGT-2022 dataset. Please download the dataset fro
 
 ## Usage
 Once the environment is set up and the data is prepared, you can run the scripts corresponding to the different methods and baselines.
-- SLSQP: Uses Sequential Least Squares Quadratic Programming to update all edge probabilities simultaneously
-```bash
+
+1. **SLSQP**: Uses Sequential Least Squares Quadratic Programming to update all edge probabilities simultaneously
+   ```bash
    python3 compute_SLSQP_rewirings-reweighting.py
 
-- BGS: Implements a batch greedy search to find the optimal rewiring at each iteration
-```bash
+2. **BGS**: Implements a batch greedy search to find the optimal rewiring at each iteration
+   ```bash
    python3 compute_greedy_rewirings.py
-
-- Greedy Baseline: Serves as an ablation baseline of the BGS
-```bash
+3. **Greedy Baseline**: Serves as an ablation baseline of the BGS
+   ```bash
    python3 compute_baseline1_greedy.py
 
-- Random Baseline Method: Implement completely random rewirings
-```bash
+4. **Random Baseline Method**: Implement completely random rewirings
+   ```bash
    python3 compute_baseline2_random.py
 
-- Diversification Baseline Method: Implements rewirings the maximize diversification across recommendation lists
-```bash
-   python3 compute_baseline3_diversify.py
+5. **Diversification Baseline Method**: Implements rewirings the maximize diversification across recommendation lists
+   ```bash
+   python3 compute_greedy_rewirings.py
 
 
 ## Contact
