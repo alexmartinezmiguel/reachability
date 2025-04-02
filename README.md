@@ -65,7 +65,7 @@ Once the environment is set up and the data is prepared, you can run the scripts
 
 5. **Diversification Baseline Method**: Implements rewirings the maximize diversification across recommendation lists
    ```bash
-   python3 compute_greedy_rewirings.py
+   python3 compute_baseline3_diversify.py
 
 ## Contact
 For questions or further information, please contact:
