@@ -8,11 +8,6 @@ This repository contains the code and data necessary to reproduce the results fr
 - [Installation](#installation)
 - [Data Preparation](#data-preparation)
 - [Usage](#usage)
-- [Methods Implemented](#methods-implemented)
-- [Evaluation Metrics](#evaluation-metrics)
-- [Results](#results)
-- [Contributing](#contributing)
-- [License](#license)
 - [Contact](#contact)
 
 ## Introduction
@@ -55,18 +50,23 @@ Once the environment is set up and the data is prepared, you can run the scripts
 - SLSQP: Uses Sequential Least Squares Quadratic Programming to update all edge probabilities simultaneously
 ```bash
    python3 compute_SLSQP_rewirings-reweighting.py
+
 - BGS: Implements a batch greedy search to find the optimal rewiring at each iteration
 ```bash
    python3 compute_greedy_rewirings.py
+
 - Greedy Baseline: Serves as an ablation baseline of the BGS
 ```bash
    python3 compute_baseline1_greedy.py
+
 - Random Baseline Method: Implement completely random rewirings
 ```bash
    python3 compute_baseline2_random.py
+
 - Diversification Baseline Method: Implements rewirings the maximize diversification across recommendation lists
 ```bash
    python3 compute_baseline3_diversify.py
+
 
 ## Contact
 For questions or further information, please contact:
