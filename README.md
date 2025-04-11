@@ -66,8 +66,15 @@ Once the environment is set up and the data is prepared, you can run the scripts
 5. **Diversification Baseline Method**: Implements rewirings the maximize diversification across recommendation lists
    ```bash
    python3 compute_baseline3_diversify.py
+   
+4. **Shufflik adaptation**: Implement an adaptation of the Shufflik algorithm [1]
+   ```bash
+   python3 compute_baseline4_shufflik.py
 
 ## Contact
 For questions or further information, please contact:
 - **Alex Martinez**
 - alexmartinez.m97@gmail.com
+
+## References
+[1] Haddadan, S., Menghini, C., Riondato, M., & Upfal, E. (2022). Reducing polarization and increasing diverse navigability in graphs by inserting edges and swapping edge weights. Data Mining and Knowledge Discovery, 36(6), 2334-2378.
