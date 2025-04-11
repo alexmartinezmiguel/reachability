@@ -128,6 +128,23 @@ def select_permitted_rewirings(probabilities,similarities,threshold):
                 permitted_rewirings.append((source_node, original_target,new_target))
     return permitted_rewirings
 
+def select_permitted_rewirings_shufflik(probabilities):
+    """
+    Select permitted rewirings within the same list of recommended nodes
+    
+    Parameters:
+    probabilities (np.ndarray): Transition probability matrix.
+    
+    Returns:
+    list: List of permitted rewirings as tuples (source, original_target, new_target).
+    """
+    permitted_rewirings = list()
+    for source_node in range(len(probabilities)):
+        original_target_nodes = np.where(probabilities[source_node]!=0.0)[0]
+        possible_pairs = list(combinations(original_target_nodes, 2))
+        permitted_rewirings.extend([(source_node, pair[0],pair[1]) for pair in possible_pairs])
+    return permitted_rewirings
+
 
 def chunks(l, n):
     """
